@@ -1,0 +1,7 @@
+.bg {
+  background-image: url(./assets/image/beams-checkout@95.jpg);
+  /* background-repeat: no-repeat; */
+  /* background-position: bottom; */
+  background-attachment: fixed;
+  /* background-size: cover; */
+}
