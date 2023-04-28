@@ -1,10 +1,17 @@
 import React from "react";
+import Hero from "./Hero";
+import TechStack from "./TechStack";
+import LatestProjects from "./LatestProjects";
+import Blogs from "./Blogs";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <>
+      <Hero />
+      <TechStack />
+      <LatestProjects />
+      <Blogs />
+    </>
   );
 };
 

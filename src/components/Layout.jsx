@@ -3,8 +3,8 @@ import { Link, Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <div className="min-h-screen bg">
-      <div className="navbar bg-base-100">
+    <div className="min-h-screen bgD">
+      <div className="navbar bg-base-10 border-b sm:px-10 md:px-28">
         <div className="flex-1">
           <Link to={"/"} className="normal-case text-xl">
             Munim Rahman
@@ -33,7 +33,9 @@ const Layout = () => {
           <Link className="btn">Get Resume</Link>
         </div>
       </div>
-      <Outlet />
+      <div className="max-w-[1115px] mx-auto">
+        <Outlet />
+      </div>
       <div className="fixed bottom-0 w-full md:hidden">
         <ul className="flex justify-around items-end bg-red-200">
           <li>Home</li>

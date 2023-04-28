@@ -1,7 +1,48 @@
-.bg {
+.bgD {
   background-image: url(./assets/image/beams-checkout@95.jpg);
   /* background-repeat: no-repeat; */
   /* background-position: bottom; */
   background-attachment: fixed;
   /* background-size: cover; */
+}
+
+.box {
+  width: 250px;
+  height: 250px;
+  border: 7px solid #ffffff50;
+  float: left;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  background-image: linear-gradient(45deg, #08aeea, #2af598 100%);
+  animation: morph 8s ease-in-out infinite;
+}
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    background-image: linear-gradient(45deg, #fa88ff, #2bd2ff 50%, #2bff88 90%);
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+.box2 {
+  background: #08aeea50 url(./assets/image/munim.jpg) no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-blend-mode: multiply;
+  animation: morphTwo 8s ease-in-out infinite 1s;
+}
+@keyframes morphTwo {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
 }
