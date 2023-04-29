@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
+import Footer from "./Footer";
 
 const Layout = () => {
   return (
@@ -36,6 +37,7 @@ const Layout = () => {
       <div className="max-w-[1115px] mx-auto">
         <Outlet />
       </div>
+      <Footer />
       <div className="fixed bottom-0 w-full md:hidden">
         <ul className="flex justify-around items-end bg-red-200">
           <li>Home</li>
