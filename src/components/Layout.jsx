@@ -5,11 +5,11 @@ import Footer from "./Footer";
 const Layout = () => {
   return (
     <div className="min-h-screen bgD">
-      <div className="navbar bg-base-10 border-b sm:px-10 md:px-28">
+      <div className="navbar bg-base-10 border-b md:px-5 lg:px-28">
         <div className="flex-1">
           <Link
             to={"/"}
-            className="normal-case font-hand text-sky-500 text-3xl md:text-4xl"
+            className="normal-case font-hand text-sky-500 text-3xl md:text-3xl lg:text-4xl"
           >
             &lt;Munim Rahman/&gt;
           </Link>
@@ -34,7 +34,13 @@ const Layout = () => {
           </ul>
         </div>
         <div className="">
-          <Link className="btn">Get Resume</Link>
+          <Link
+            to="https://drive.google.com/file/d/1J-lFWNe8CtoiqLPeqlj-FKRMgKRC-xEG/view"
+            target="_blank"
+            className="btn"
+          >
+            Get Resume
+          </Link>
         </div>
       </div>
       <div className="max-w-[1115px] mx-auto pb-16 md:pb-0">
@@ -45,27 +51,27 @@ const Layout = () => {
         <ul className="flex justify-around items-end bg-sky-500">
           <li className="my-2">
             <Link to={"/"}>
-              <i class="fas fa-home text-xl text-white"></i>
+              <i className="fas fa-home text-xl text-white"></i>
             </Link>
           </li>
           <li className="my-2">
             <Link to={"/about"}>
-              <i class="fas fa-user text-xl text-white"></i>
+              <i className="fas fa-user text-xl text-white"></i>
             </Link>
           </li>
           <li className="my-2">
             <Link to={"/projects"}>
-              <i class="fas fa-briefcase text-xl text-white"></i>
+              <i className="fas fa-briefcase text-xl text-white"></i>
             </Link>
           </li>
           <li className="my-2">
             <Link to={"/blogs"}>
-              <i class="fas fa-blog text-xl text-white"></i>
+              <i className="fas fa-blog text-xl text-white"></i>
             </Link>
           </li>
           <li className="my-2">
             <Link to={"/contact"}>
-              <i class="fas fa-comment-dots text-xl text-white"></i>
+              <i className="fas fa-comment-dots text-xl text-white"></i>
             </Link>
           </li>
         </ul>

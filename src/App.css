@@ -22,6 +22,11 @@
   background-clip: text;
 }
 
+.con {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 @media (max-width: 767px) {
   /* CSS rules for screens with a width of 767px or less */
   .bgD {
@@ -30,5 +35,9 @@
     /* background-position: bottom; */
     background-attachment: fixed;
     background-size: cover;
+  }
+  .fade-left,
+  .fade-right {
+    transform: translateX(-20px);
   }
 }

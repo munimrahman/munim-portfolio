@@ -1,5 +1,5 @@
 import React from "react";
-import man from "../../assets/image/man.png";
+import man from "../../assets/image/munim_1.jpg";
 import sig from "../../assets/image/sig.png";
 
 const About = () => {
@@ -9,9 +9,9 @@ const About = () => {
         <figure
           data-aos="fade-right"
           data-aos-duration="1000"
-          className="md:col-span-4 max-w-[360px]"
+          className="md:col-span-4 max-w-[360px] h-[400px]"
         >
-          <img src={man} className="w-full rounded-2xl" alt="" />
+          <img src={man} className="w-full h-full rounded-2xl" alt="" />
         </figure>
         <div
           data-aos="fade-left"

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import img from "../../assets/image/munim.jpg";
+import img from "../../assets/image/munim_3.png";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -26,35 +26,42 @@ const Hero = () => {
             search for work, making over 140,000 applications every single day
           </p>
           <div
-            className="my-2 flex gap-3 text-xl"
+            className="my-3 flex gap-3 text-xl"
             data-aos="fade-up"
             data-aos-duration="1200"
           >
             <Link to="https://web.facebook.com/munimrh/" target="_blank">
-              <i class="fab fa-facebook text-[#2173EB]"></i>
+              <i className="fab fa-facebook text-[#2173EB]"></i>
             </Link>
             <Link to="https://www.linkedin.com/in/munimrahman/" target="_blank">
-              <i class="fab fa-linkedin text-[#1473AF]"></i>
+              <i className="fab fa-linkedin text-[#1473AF]"></i>
             </Link>
             <Link to="https://github.com/munimrahman" target="_blank">
-              <i class="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </Link>
             <Link to="https://www.youtube.com/@munim-rahman" target="_blank">
-              <i class="fab fa-youtube text-[#F60501]"></i>
+              <i className="fab fa-youtube text-[#F60501]"></i>
             </Link>
             <Link to="https://medium.com/@munimrahman" target="_blank">
-              <i class="fab fa-medium"></i>
+              <i className="fab fa-medium"></i>
             </Link>
           </div>
           <div data-aos="fade-up" data-aos-duration="1500">
-            <button className="text-primary border-b-2 border-sky-500 px-1 text-lg uppercase me-3">
+            <Link
+              to={"/contact"}
+              className="text-primary border-b-2 border-sky-500 px-1 text-lg uppercase me-3"
+            >
               Let's Talk
-              <i class="fas fa-comment-dots text-sky-500 ms-2"></i>
-            </button>
-            <button className="text-primary border-b-2 border-sky-500 px-1 text-lg uppercase">
+              <i className="fas fa-comment-dots text-sky-500 ms-2"></i>
+            </Link>
+            <Link
+              to="https://drive.google.com/file/d/1J-lFWNe8CtoiqLPeqlj-FKRMgKRC-xEG/view"
+              target="_blank"
+              className="text-primary border-b-2 border-sky-500 px-1 text-lg uppercase"
+            >
               Get Resume
-              <i class="fas fa-cloud-download-alt text-sky-500 ms-2"></i>
-            </button>
+              <i className="fas fa-cloud-download-alt text-sky-500 ms-2"></i>
+            </Link>
           </div>
         </div>
         <div className="mt-3" data-aos="fade-left" data-aos-duration="1500">

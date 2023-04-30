@@ -31,16 +31,16 @@ const ProjectCard = () => {
         </div>
         <div className="mt-3 flex text-gray-500 flex-wrap justify-between items-center">
           <span>
-            <i class="fas fa-link text-xs me-1"></i>
+            <i className="fas fa-link text-xs me-1"></i>
             <a className="text-sm underline">Live Link</a>
           </span>
           <div>
             <span>
-              <i class="fas fa-code text-xs me-1"></i>
+              <i className="fas fa-code text-xs me-1"></i>
               <a className="text-sm underline me-2">Client</a>
             </span>
             <span>
-              <i class="fas fa-code text-xs me-1"></i>
+              <i className="fas fa-code text-xs me-1"></i>
               <a className="text-sm underline me-2">Server</a>
             </span>
           </div>
