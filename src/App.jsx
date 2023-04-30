@@ -36,7 +36,11 @@ function App() {
       ],
     },
   ]);
-  return <RouterProvider router={router} />;
+  return (
+    <div className="font-roboto">
+      <RouterProvider router={router} />
+    </div>
+  );
 }
 
 export default App;

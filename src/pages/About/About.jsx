@@ -11,14 +11,14 @@ const About = () => {
         </figure>
         <div className="md:col-span-8 mt-5 md:mt-0 px- md:px-10">
           <p className="text-lg font-bold">Nice to meet you,</p>
-          <h2 className="text-2xl font-bold text-primary my-2">
+          <h2 className="text-2xl font-bold text-sky-500 my-2">
             I'm Munim Rahman
           </h2>
           <p>
             Working full time in Angular, Typescript and SCSS, leading the team
             for revamping DotCMS administration system.
           </p>
-          <p className="my-2 text-primary text-lg">
+          <p className="my-2 text-sky-500 text-xl">
             Code, Design, Learn and Teach.
           </p>
           <p>
@@ -30,7 +30,7 @@ const About = () => {
         </div>
       </div>
       <div className="mt-8">
-        <h2 className="mb-3 text-3xl">My Skills</h2>
+        <h2 className="mb-3 text-4xl font-hand underline">My Skills</h2>
         <div className="flex flex-wrap gap-2">
           <p className="bg-slate-700 text-white text-lg px-4 py-1">HTML</p>
           <p className="bg-slate-700 text-white text-lg px-4 py-1">CSS</p>

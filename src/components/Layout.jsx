@@ -7,8 +7,11 @@ const Layout = () => {
     <div className="min-h-screen bgD">
       <div className="navbar bg-base-10 border-b sm:px-10 md:px-28">
         <div className="flex-1">
-          <Link to={"/"} className="normal-case text-xl">
-            Munim Rahman
+          <Link
+            to={"/"}
+            className="normal-case font-hand text-sky-500 text-3xl md:text-4xl"
+          >
+            &lt;Munim Rahman/&gt;
           </Link>
         </div>
         <div className="flex-none hidden md:block">
@@ -34,17 +37,37 @@ const Layout = () => {
           <Link className="btn">Get Resume</Link>
         </div>
       </div>
-      <div className="max-w-[1115px] mx-auto">
+      <div className="max-w-[1115px] mx-auto pb-16 md:pb-0">
         <Outlet />
       </div>
       <Footer />
       <div className="fixed bottom-0 w-full md:hidden">
-        <ul className="flex justify-around items-end bg-red-200">
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Blogs</li>
-          <li>Contact</li>
+        <ul className="flex justify-around items-end bg-sky-500">
+          <li className="my-2">
+            <Link to={"/"}>
+              <i class="fas fa-home text-xl text-white"></i>
+            </Link>
+          </li>
+          <li className="my-2">
+            <Link to={"/about"}>
+              <i class="fas fa-user text-xl text-white"></i>
+            </Link>
+          </li>
+          <li className="my-2">
+            <Link to={"/projects"}>
+              <i class="fas fa-briefcase text-xl text-white"></i>
+            </Link>
+          </li>
+          <li className="my-2">
+            <Link to={"/blogs"}>
+              <i class="fas fa-blog text-xl text-white"></i>
+            </Link>
+          </li>
+          <li className="my-2">
+            <Link to={"/contact"}>
+              <i class="fas fa-comment-dots text-xl text-white"></i>
+            </Link>
+          </li>
         </ul>
       </div>
     </div>

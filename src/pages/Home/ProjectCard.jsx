@@ -15,8 +15,10 @@ const ProjectCard = () => {
         <img src={project} className="w-full" alt="" />
       </figure>
       <div className="p-5">
-        <h2 className="text-xl font-bold">Pro Peak</h2>
-        <h3 className="text- text-gray-500">MERN Stack Job Portal</h3>
+        <h2 className="text-xl text-primary font-bold">Pro Peak</h2>
+        <h3 className="text- text-gray-500 font-light">
+          MERN Stack Job Portal
+        </h3>
 
         <div className="flex flex-wrap my-3 gap-1">
           <ReactTag />
@@ -27,7 +29,7 @@ const ProjectCard = () => {
           <TailwindTag />
           <JavaScriptTag />
         </div>
-        <div className="mt-3 flex flex-wrap justify-between items-center">
+        <div className="mt-3 flex text-gray-500 flex-wrap justify-between items-center">
           <span>
             <i class="fas fa-link text-xs me-1"></i>
             <a className="text-sm underline">Live Link</a>

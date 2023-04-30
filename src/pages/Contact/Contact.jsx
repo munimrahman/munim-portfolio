@@ -43,7 +43,7 @@ const Contact = () => {
             </div>
           </form>
         </div>
-        <div className="mt-3 md:mt-0 md:col-span-5 justify-self-center">
+        <div className="flex flex-wrap justify-between md:block mt-3 md:mt-0 md:col-span-5 justify-self-center">
           <div className="flex items-center">
             <div className="bg-purple-500 rounded-full h-20 w-20 flex justify-center items-center">
               <i class="fas fa-phone-volume text-white text-5xl"></i>
