@@ -11,9 +11,13 @@ const LatestProjects = () => {
         </p>
       </div>
       <div className="grid  md:grid-cols-3 place-items-center gap-8 mt-8 px-5">
+        <div data-aos="fade-up-right" data-aos-duration="1000">
+          <ProjectCard />
+        </div>
         <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        <div data-aos="fade-up-left" data-aos-duration="1000">
+          <ProjectCard />{" "}
+        </div>
       </div>
     </div>
   );

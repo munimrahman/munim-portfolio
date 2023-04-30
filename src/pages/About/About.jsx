@@ -4,12 +4,20 @@ import sig from "../../assets/image/sig.png";
 
 const About = () => {
   return (
-    <div className="mt-5 md:mt-16 px-5 md:px-20">
+    <div className="mt-5 md:mt-12 px-5 md:px-20">
       <div className="grid grid-cols-1 md:grid-cols-12 justify-center items-center place-items-center">
-        <figure className="md:col-span-4 max-w-[360px]">
+        <figure
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          className="md:col-span-4 max-w-[360px]"
+        >
           <img src={man} className="w-full rounded-2xl" alt="" />
         </figure>
-        <div className="md:col-span-8 mt-5 md:mt-0 px- md:px-10">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          className="md:col-span-8 mt-5 md:mt-0 px- md:px-10"
+        >
           <p className="text-lg font-bold">Nice to meet you,</p>
           <h2 className="text-2xl font-bold text-sky-500 my-2">
             I'm Munim Rahman
@@ -31,7 +39,12 @@ const About = () => {
       </div>
       <div className="mt-8">
         <h2 className="mb-3 text-4xl font-hand underline">My Skills</h2>
-        <div className="flex flex-wrap gap-2">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          className="flex flex-wrap gap-2"
+        >
           <p className="bg-slate-700 text-white text-lg px-4 py-1">HTML</p>
           <p className="bg-slate-700 text-white text-lg px-4 py-1">CSS</p>
           <p className="bg-slate-700 text-white text-lg px-4 py-1">Tailwind</p>

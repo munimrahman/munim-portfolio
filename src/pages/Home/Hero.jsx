@@ -1,27 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img from "../../assets/image/munim.jpg";
 import { Link } from "react-router-dom";
-import ScrollAnimation from "react-animate-on-scroll";
 
 const Hero = () => {
   return (
     <div className="mt-2 md:mt-20">
       <div className="grid grid-cols-1 md:grid-cols-2 flex-row-reverse place-items-center">
         <div className="px-5 sm:ps-14 mt-5 md:mt-0 order-last md:order-first">
-          <p className="text-xl text-primary">Hello👋, I'm</p>
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-            <h1>React Animate On Scroll</h1>
-            <h2>Using:</h2>
-          </ScrollAnimation>
-          <h1 className="text-4xl sm:text-5xl font-bold text-sky-500">
+          <p className="text-xl text-primary" data-aos="fade-up">
+            Hello👋, I'm
+          </p>
+          <h1
+            className="text-4xl sm:text-5xl font-bold text-sky-500"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
             Munim Rahman
           </h1>
-
-          <p className="text-primary my-3">
+          <p
+            className="text-primary my-3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             Each month, more than 3 million job seekers turn to website in their
             search for work, making over 140,000 applications every single day
           </p>
-          <div className="my-2 flex gap-3 text-xl">
+          <div
+            className="my-2 flex gap-3 text-xl"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
             <Link to="https://web.facebook.com/munimrh/" target="_blank">
               <i class="fab fa-facebook text-[#2173EB]"></i>
             </Link>
@@ -38,7 +46,7 @@ const Hero = () => {
               <i class="fab fa-medium"></i>
             </Link>
           </div>
-          <div className="">
+          <div data-aos="fade-up" data-aos-duration="1500">
             <button className="text-primary border-b-2 border-sky-500 px-1 text-lg uppercase me-3">
               Let's Talk
               <i class="fas fa-comment-dots text-sky-500 ms-2"></i>
@@ -49,7 +57,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="mt-3">
+        <div className="mt-3" data-aos="fade-left" data-aos-duration="1500">
           <div className="flex justify-center">
             <img
               src={img}

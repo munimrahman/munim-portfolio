@@ -21,7 +21,11 @@ const TechStack = () => {
           Technologies I’ve been working with recently
         </p>
       </div>
-      <div className="grid grid-cols-12 place-items-center gap-y-8 mt-8">
+      <div
+        className="grid grid-cols-12 place-items-center gap-y-8 mt-8"
+        data-aos="fade-up"
+        data-aos-duration="700"
+      >
         <div className="col-span-3 md:col-span-2">
           <img src={html} className="w-14 h-14 md:w-16 md:h-16" alt="" />
         </div>

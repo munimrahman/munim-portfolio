@@ -6,6 +6,9 @@ import About from "./pages/About/About";
 import Projects from "./pages/Projects/Projects";
 import Blogs from "./pages/Blogs/Blogs";
 import Contact from "./pages/Contact/Contact";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
   const router = createBrowserRouter([
@@ -36,6 +39,11 @@ function App() {
       ],
     },
   ]);
+  useEffect(() => {
+    AOS.init({
+      once: false,
+    });
+  }, []);
   return (
     <div className="font-roboto">
       <RouterProvider router={router} />

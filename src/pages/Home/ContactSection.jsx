@@ -4,10 +4,14 @@ import contact from "../../assets/image/contact.png";
 const ContactSection = () => {
   return (
     <div className="md:grid md:grid-cols-2 md:place-items-center pt-10 px-5 md:px-0">
-      <figure className="hidden md:block">
+      <figure
+        className="hidden md:block"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
         <img src={contact} alt="" />
       </figure>
-      <div>
+      <div data-aos="fade-left" data-aos-duration="1000">
         <h2 className="text-2xl font-bold mb-3 text-center">
           I’m ready to talk...
         </h2>
