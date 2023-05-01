@@ -1,5 +1,5 @@
 import React from "react";
-import project from "../../assets/image/project.png";
+import project from "../../assets/image/pro-s.png";
 import ReactTag from "../../components/Tags/ReactTag";
 import ReduxTag from "../../components/Tags/ReduxTag";
 import NodeTag from "../../components/Tags/NodeTag";
@@ -11,7 +11,7 @@ import JavaScriptTag from "../../components/Tags/JavaScriptTag";
 const ProjectCard = () => {
   return (
     <div className="card bg-base-100 shadow-xl">
-      <figure>
+      <figure className="bg-sky-500">
         <img src={project} className="w-full" alt="" />
       </figure>
       <div className="p-5">

@@ -4,29 +4,36 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="mt-2 md:mt-20">
+    <div className="mt-2 md:mt-0 md:pt-20">
       <div className="grid grid-cols-1 md:grid-cols-2 flex-row-reverse place-items-center">
         <div className="px-5 sm:ps-14 mt-5 md:mt-0 order-last md:order-first">
           <p className="text-xl text-primary" data-aos="fade-up">
             Hello👋, I'm
           </p>
           <h1
-            className="text-4xl sm:text-5xl font-bold text-sky-500"
+            className="text-3xl sm:text-5xl font-bold text-sky-500"
             data-aos="fade-up"
             data-aos-duration="700"
           >
             Munim Rahman
           </h1>
           <p
-            className="text-primary my-3"
+            className="text-primary my-2 md:my-3"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            Each month, more than 3 million job seekers turn to website in their
-            search for work, making over 140,000 applications every single day
+            Working full time in{" "}
+            <span className="border-b border-sky-500 text-sky-500">
+              JavaScript
+            </span>
+            ,{" "}
+            <span className="border-b border-sky-500 text-sky-500">React</span>{" "}
+            & <span className="border-b border-sky-500 text-sky-500">Node</span>
+            . Passionate about creating innovative solutions with high-quality
+            code that meets the needs of both users and clients.
           </p>
           <div
-            className="my-3 flex gap-3 text-xl"
+            className="my-1 md:my-2 flex gap-3 text-xl"
             data-aos="fade-up"
             data-aos-duration="1200"
           >

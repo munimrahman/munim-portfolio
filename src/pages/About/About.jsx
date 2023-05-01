@@ -22,9 +22,9 @@ const About = () => {
           <h2 className="text-2xl font-bold text-sky-500 my-2">
             I'm Munim Rahman
           </h2>
-          <p>
-            Working full time in Angular, Typescript and SCSS, leading the team
-            for revamping DotCMS administration system.
+          <p className="text-primary my-2">
+            Passionate about creating innovative solutions with high-quality
+            code that meets the needs of both users and clients.
           </p>
           <p className="my-2 text-sky-500 text-xl">
             Code, Design, Learn and Teach.

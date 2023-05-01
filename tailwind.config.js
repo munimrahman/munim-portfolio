@@ -6,7 +6,7 @@ export default {
       {
         doctortheme: {
           primary: "#42446E",
-          secondary: "#05264e",
+          // secondary: "#05264e",
           accent: "#4f5e64",
           neutral: "#66789c",
           info: "#e0e6f7",

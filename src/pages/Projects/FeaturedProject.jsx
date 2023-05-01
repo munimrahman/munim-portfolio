@@ -1,17 +1,21 @@
 import React from "react";
 import ReactTag from "../../components/Tags/ReactTag";
+import DaisyTag from "../../components/Tags/DaisyTag";
 import ReduxTag from "../../components/Tags/ReduxTag";
 import NodeTag from "../../components/Tags/NodeTag";
 import ExpressTag from "../../components/Tags/ExpressTag";
 import MongoTag from "../../components/Tags/MongoTag";
 import TailwindTag from "../../components/Tags/TailwindTag";
+import MongooseTag from "../../components/Tags/MongooseTag";
+import proPeak from "../../assets/image/pro-s.png";
+import { Link } from "react-router-dom";
 
 const FeaturedProject = () => {
   return (
     <div className="grid grid-cols-1 md:gap-5 md:grid-cols-12 rounded-xl shadow-xl border bg-white">
       <figure className="col-span-5">
         <img
-          src="https://pro-peak.netlify.app/static/media/img-news1.f67b4022b9711bda254b.png"
+          src={proPeak}
           alt="Album"
           className="w-full h-full rounded-tl-xl rounded-tr-xl md:rounded-l-xl md:rounded-tr-none"
         />
@@ -28,26 +32,44 @@ const FeaturedProject = () => {
           blanditiis incidunt.
         </p>
         <div className="flex flex-wrap my-1 gap-1">
+          <TailwindTag />
+          <DaisyTag />
           <ReactTag />
           <ReduxTag />
           <NodeTag />
           <ExpressTag />
           <MongoTag />
-          <TailwindTag />
+          <MongooseTag />
         </div>
         <div className="mt-3 flex flex-wrap justify-between items-center">
-          <span>
-            <i className="fas fa-link text-xs me-1"></i>
-            <a className="text-sm underline">Live Link</a>
+          <span className="text-gray-500 hover:text-black">
+            <Link
+              to="https://pro-peak.netlify.app/"
+              target="_blank"
+              className="text-sm underline"
+            >
+              <i className="fas fa-link text-xs me-1"></i>
+              Live Link
+            </Link>
           </span>
           <div>
-            <span>
-              <i className="fas fa-code text-xs me-1"></i>
-              <a className="text-sm underline me-2">Client Code</a>
+            <span className="text-gray-500 hover:text-black">
+              <Link
+                to="https://github.com/munimrahman/pro-peak-job-portal"
+                target="_blank"
+                className="text-sm underline me-2"
+              >
+                <i className="fas fa-code text-xs me-1"></i>Client Code
+              </Link>
             </span>
-            <span>
-              <i className="fas fa-code text-xs me-1"></i>
-              <a className="text-sm underline me-2">Server Code</a>
+            <span className="text-gray-500 hover:text-black">
+              <Link
+                to="https://github.com/munimrahman/pro-peak-server"
+                target="_blank"
+                className="text-sm underline me-2"
+              >
+                <i className="fas fa-code text-xs me-1"></i>Server Code
+              </Link>
             </span>
           </div>
         </div>
