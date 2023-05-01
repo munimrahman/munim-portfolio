@@ -9,8 +9,10 @@ import NodeTag from "../../components/Tags/NodeTag";
 import ExpressTag from "../../components/Tags/ExpressTag";
 import MongoTag from "../../components/Tags/MongoTag";
 import { Link } from "react-router-dom";
+import useTitle from "../../hooks/useTitle";
 
 const Projects = () => {
+  useTitle("Projects | Munim Rahman");
   return (
     <div className="mt-5 px-5">
       <h1 className="text-4xl underline font-hand mb-5">Projects</h1>

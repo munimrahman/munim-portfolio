@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import ReCAPTCHA from "react-google-recaptcha";
+import useTitle from "../../hooks/useTitle";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -9,6 +10,7 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [isHuman, setIsHuman] = useState(false);
   const captchaRef = useRef(null);
+  useTitle("Contact | Munim Rahman");
 
   const sendEmail = (e) => {
     e.preventDefault();

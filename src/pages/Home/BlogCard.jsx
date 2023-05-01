@@ -3,6 +3,7 @@ import blog from "../../assets/image/blog.png";
 import ReactTag from "../../components/Tags/ReactTag";
 import ReduxTag from "../../components/Tags/ReduxTag";
 import NodeTag from "../../components/Tags/NodeTag";
+import { Link } from "react-router-dom";
 
 const BlogCard = () => {
   return (
@@ -16,8 +17,8 @@ const BlogCard = () => {
           <ReduxTag />
           <NodeTag />
         </div>
-        <h2 className="text-lg font-bold">
-          Converting a Laravel Inertia App from Mix to Vite
+        <h2 className="text-lg text-primary font-bold">
+          <Link to="">Converting a Laravel Inertia App from Mix to Vite</Link>
         </h2>
         <p className="my-2">
           This is sample project description random things are here in
@@ -25,7 +26,9 @@ const BlogCard = () => {
           content
         </p>
         <div className="flex justify-between">
-          <a className="btn">Read More</a>
+          <Link to={""} className="btn">
+            Read More
+          </Link>
         </div>
       </div>
     </div>

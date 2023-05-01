@@ -1,8 +1,10 @@
 import React from "react";
 import man from "../../assets/image/munim_1.jpg";
 import sig from "../../assets/image/sig.png";
+import useTitle from "../../hooks/useTitle";
 
 const About = () => {
+  useTitle("About | Munim Rahman");
   return (
     <div className="mt-5 md:mt-12 px-5 md:px-20">
       <div className="grid grid-cols-1 md:grid-cols-12 justify-center items-center place-items-center">
