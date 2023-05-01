@@ -10,8 +10,10 @@ import MongoTag from "../../components/Tags/MongoTag";
 import TailwindTag from "../../components/Tags/TailwindTag";
 import MongooseTag from "../../components/Tags/MongooseTag";
 import BootstrapTag from "../../components/Tags/BootstrapTag";
+import JwtTag from "../../components/Tags/JwtTag";
 
 import { Link } from "react-router-dom";
+import FirebaseTag from "../../components/Tags/FirebaseTag";
 
 const LatestProjects = () => {
   return (
@@ -98,6 +100,7 @@ const LatestProjects = () => {
               <NodeTag />
               <ExpressTag />
               <MongoTag />
+              <FirebaseTag />
             </div>
             <div className="mt-3 flex text-gray-500 flex-wrap justify-between items-center">
               <span className="hover:text-black">
@@ -153,6 +156,7 @@ const LatestProjects = () => {
                 <NodeTag />
                 <ExpressTag />
                 <MongoTag />
+                <FirebaseTag />
               </div>
               <div className="mt-3 flex text-gray-500 flex-wrap justify-between items-center">
                 <span className="hover:text-black">

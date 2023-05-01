@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="hidden md:block max-w-[1115px] mx-auto pb-5 md:pb-0">
       <div className="divider mb-0"></div>
-      <p className="text-sm text-center py-5 px-2">
+      <p className="text-sm text-center text-primary py-5 px-2">
         Designed and built by{" "}
         <Link
           to={"https://web.facebook.com/munimrh/"}

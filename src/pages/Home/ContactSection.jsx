@@ -47,7 +47,7 @@ const ContactSection = () => {
         <img src={contact} alt="" />
       </figure>
       <div data-aos="fade-left" data-aos-duration="1000">
-        <h2 className="text-2xl font-bold mb-3 text-center">
+        <h2 className="text-2xl text-primary font-bold mb-3 text-center">
           I’m ready to talk...
         </h2>
         <form onSubmit={sendEmail}>

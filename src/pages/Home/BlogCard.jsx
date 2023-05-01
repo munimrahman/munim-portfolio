@@ -20,7 +20,7 @@ const BlogCard = () => {
         <h2 className="text-lg text-primary font-bold">
           <Link to="">Converting a Laravel Inertia App from Mix to Vite</Link>
         </h2>
-        <p className="my-2">
+        <p className="my-2 text-gray-700">
           This is sample project description random things are here in
           description This is sample project lorem ipsum generator for dummy
           content

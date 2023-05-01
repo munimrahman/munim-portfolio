@@ -9,6 +9,7 @@ import TailwindTag from "../../components/Tags/TailwindTag";
 import MongooseTag from "../../components/Tags/MongooseTag";
 import proPeak from "../../assets/image/pro-s.png";
 import { Link } from "react-router-dom";
+import JwtTag from "../../components/Tags/JwtTag";
 
 const FeaturedProject = () => {
   return (
@@ -26,10 +27,10 @@ const FeaturedProject = () => {
         </h2>
         <h3 className="text-gray-500 text-lg">MERN Stack Job Portal</h3>
         <p className="py-2">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
-          consequatur sapiente quaerat in dolor id eos vitae voluptates magnam
-          omnis, rerum, saepe adipisci nesciunt quasi vero quidem obcaecati
-          blanditiis incidunt.
+          Pro Peak is a MERN stack job portal. I am currently working on this
+          project. I have planed some idea to implement in this site. Which are
+          given below - 1. State Management with Redux & RTK Query, 2. JWT
+          Authentication, 3. User, Job and etc CRUD, 4. Real Time Chat etc.
         </p>
         <div className="flex flex-wrap my-1 gap-1">
           <TailwindTag />
@@ -40,6 +41,7 @@ const FeaturedProject = () => {
           <ExpressTag />
           <MongoTag />
           <MongooseTag />
+          <JwtTag />
         </div>
         <div className="mt-3 flex flex-wrap justify-between items-center">
           <span className="text-gray-500 hover:text-black">
